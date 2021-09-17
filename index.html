@@ -46,6 +46,8 @@ console.log(exampleFunc(text));
                 previewElem.innerHTML = marked(defaultText)
             }
             
+            marked.setOptions({breaks: true})
+
             function previewUpdate(){
                let previa = document.getElementById("preview");
                let valueEditor = document.getElementById("editor").value;
